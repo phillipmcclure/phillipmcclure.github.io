@@ -1,17 +1,122 @@
 body {
     background-color: white;
+    font-family:'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vw;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
+p {
+    margin: 0;
+}
+h1 {
+    font-weight: normal;
+    font-size: medium;
+    font-style: italic;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    margin: 0;
+}
+
+.main {
     display: block;
-    max-width: 90%;
-    width: 2500px;
-    margin: auto;
+    margin: 1rem;
+    text-align: center;
+    padding: auto;
+    height: auto;
+    width: auto;
+}
+
+.verticalText {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin-top: 10%;
+    float: left;
+    justify-content: space-between;
+    text-align: left;
+    clear: left;
 }
 
 .blurb {
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+    float: left;
+    flex-wrap: wrap;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.pastShows {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.titleArtist {
+    margin-top: 1rem;
+}
+
+.currentShowImage {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     max-width: 100%;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    height: auto;
+    float: right;
+    flex: auto;
+}
+
+.currentShowImage > * {
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    float: right;
+    clear: both;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .blurb {
+        display: block;
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .currentShowImage {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        float: right;
+    }
+    
 }

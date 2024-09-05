@@ -30,8 +30,12 @@ a:any-link {
     color: black;
 }
 
-.main {
+.artistInfo {
+    color: #727272;
+}
 
+.main {
+    margin-bottom: 1rem;
 }
 
 .nav {
@@ -61,7 +65,8 @@ a:any-link {
     float: left;
     text-align: start;
     margin-top: 1rem;
-    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 .blurb > * {
@@ -86,6 +91,11 @@ img.current-show {
     float: right;
 }
 
+.on-view-artists {
+    display: flex;
+    flex-direction: column;
+}
+
 .on-view-info {
     display: flex;
     flex-direction: column;
@@ -98,7 +108,8 @@ img.current-show {
     right: 0;
     float: right;
     flex-direction: column;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .on-view-images > * {
@@ -116,68 +127,18 @@ img.current-show {
     max-width: 45%;
     float: left;
     text-align: start;
-    margin: auto;
     padding-left: 1rem;
+    margin-top: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
-    img.current-show {
-        display: flex;
-        flex-wrap: nowrap;
-        text-align: center;
-        justify-content: center;
-        max-width: 90%;
-        margin: auto;
-    }
-    
-    .blurb {
-        display: block;
-        max-width: 100%;
-        text-align: start;
-        margin-top: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .blurb > * {
-        margin: 0;
-    }
-        
-    .contactCard {
-        display: block;
-        max-width: 100%;
-        text-align: start;
-        margin: 0;
-        }
-
+@media only screen and (max-width:768px) {    
     .main {
         display: flex;
         flex-direction: column;
-        order: 3;
-        max-width: 90vw;
-    }
-
-        .main   :nth-child(2) { order: 1;}
-        .main   :nth-child(1) { order: 2;}
-        .main   :nth-child(3) { order: 3;}
-}
-
-/*
-@media only screen and (max-width:768px) {
-    p {
-        font-size: medium;
-    }
-    
-    .main {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .blurb {
-        display: block;
         max-width: 100%;
         margin-bottom: 1rem;
     }
@@ -211,19 +172,5 @@ img.current-show {
     .on-view-images > * {
         max-width: 100%;
         margin-bottom: 1rem;
-    }
-    
-    .nav {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        justify-content: space-between;
-        margin-top: 1rem;
-        margin-left: -1rem;
-        text-align: left;
-    }
-
-    .nav > * {
-        margin-top: 1rem;
     }
 }

@@ -129,7 +129,7 @@ img.current-show {
     overflow-y: scroll;
 }
 
-.exhibitions-titles {
+.exhibitions-titles > * {
     margin-bottom: 1rem;
 }
 

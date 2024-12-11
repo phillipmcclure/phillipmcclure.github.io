@@ -81,6 +81,15 @@ a:any-link {
     padding: 1rem;
 }
 
+.showPreview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    top: 7rem;
+}
+
 .pastShows {
     display: flex;
     flex-direction: column;

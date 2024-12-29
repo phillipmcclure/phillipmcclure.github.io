@@ -153,6 +153,16 @@ img.current-show {
     margin-top: 1rem;
 }
 
+.footer-link {
+    font-size: smaller;
+    text-decoration: none;
+    color: #727272;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:768px) {  
     body {
         max-width: 100%;

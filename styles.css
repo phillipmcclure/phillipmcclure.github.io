@@ -34,7 +34,7 @@ p {
 
 footer {
     display: block;
-    bottom: 1rem;
+    bottom: 0rem;
     text-align: center;
     margin-bottom: 1rem;
     min-width: 100%;

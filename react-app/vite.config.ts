@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/experimental/',
   build: {
-    outDir: '../experimental',
+    outDir: 'dist',
     emptyOutDir: true,
   },
   server: {

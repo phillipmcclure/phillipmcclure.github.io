@@ -128,10 +128,10 @@ const Upcoming: React.FC = () => {
   const navigate = useNavigate();
   const dragStartTime = React.useRef<number>(0);
 
-  const handleClick = () => {
+  const handleClick = (route: string) => () => {
     const dragDuration = Date.now() - dragStartTime.current;
     if (dragDuration < 200) { // If the interaction was less than 200ms, treat it as a click
-      navigate('/on-view');
+      navigate(route);
     }
   };
 
@@ -147,7 +147,7 @@ const Upcoming: React.FC = () => {
     <Container>
       <Column>
         {isMobile ? (
-          <ShowPreview onClick={handleClick}>
+          <ShowPreview onClick={() => navigate('/on-view')}>
             <ShowImage>
               <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
             </ShowImage>
@@ -162,7 +162,7 @@ const Upcoming: React.FC = () => {
             onStart={handleDragStart}
             onStop={handleDragStop}
           >
-            <ShowPreview onClick={handleClick}>
+            <ShowPreview onClick={handleClick('/on-view')}>
               <ShowImage>
                 <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" draggable={false} />
               </ShowImage>
@@ -199,7 +199,7 @@ const Upcoming: React.FC = () => {
           </Draggable>
         )} */}
         {isMobile ? (
-          <ShowPreview>
+          <ShowPreview onClick={() => navigate('/poems')}>
             <ShowImage>
               <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" />
             </ShowImage>
@@ -209,8 +209,13 @@ const Upcoming: React.FC = () => {
             <DateText>Poems, September 2024</DateText>
           </ShowPreview>
         ) : (
-          <Draggable bounds="parent" defaultPosition={{ x: 0, y: window.innerHeight / 3 }}>
-            <ShowPreview>
+          <Draggable 
+            bounds="parent" 
+            defaultPosition={{ x: 0, y: window.innerHeight / 3 }}
+            onStart={handleDragStart}
+            onStop={handleDragStop}
+          >
+            <ShowPreview onClick={handleClick('/poems')}>
               <ShowImage>
                 <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
               </ShowImage>

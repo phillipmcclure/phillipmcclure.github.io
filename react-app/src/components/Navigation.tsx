@@ -51,7 +51,7 @@ const NavContainer = styled.div`
 const StyledLink = css`
   h1 {
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Arial', sans-serif;
     margin-right: 0.25rem;
 
@@ -79,10 +79,10 @@ const Navigation: React.FC = () => {
     <>
       <Nav>
         <NavContainer>
-          <NavLink to="/"><h1>Blue boy,</h1></NavLink>
+          <NavLink to="/"><h1>home,</h1></NavLink>
           <NavLink to="/on-view"><h1>on view,</h1></NavLink>
           <NavLink to="/upcoming"><h1>exhibitions,</h1></NavLink>
-          <NavLink to="/archive"><h1>reading room,</h1></NavLink>
+          <NavLink to="/reading-room"><h1>reading room,</h1></NavLink>
           <NavLink to="/info"><h1>info,</h1></NavLink>
           <ExternalLink href="https://blueboyspace.substack.com/subscribe"><h1>newsletter,</h1></ExternalLink>
           <ExternalLink href="https://blueboy.bigcartel.com/"><h1>shop</h1></ExternalLink>

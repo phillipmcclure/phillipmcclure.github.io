@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Draggable from 'react-draggable'
+import { useNavigate } from 'react-router-dom'
 
 const Container = styled.div`
   display: grid;
@@ -22,7 +23,6 @@ const Column = styled.div`
   width: 100%;
   box-sizing: border-box;
   min-height: 50vh;
-  height: 97vh;
   
   &:not(:last-child) {
     border-right: 1px solid black;
@@ -52,13 +52,19 @@ const ShowPreview = styled.div`
   position: absolute;
   cursor: move;
   max-width: 400px;
-  margin: 0 1rem;
   margin-top: 3rem;
+  padding-right: 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   @media (max-width: 1024px) {
     position: static;
     cursor: default;
     margin: 0;
+    padding-right: 0;
   }
 `
 
@@ -84,9 +90,11 @@ const ArtistBox = styled.div`
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   background: #FFFFF3;
+  display: inline-block;
   h1 {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
+    white-space: nowrap;
   }
 
   @media (max-width: 1024px) {
@@ -95,7 +103,7 @@ const ArtistBox = styled.div`
 `
 
 const DateText = styled.h1`
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 `
 
@@ -117,36 +125,57 @@ const useMediaQuery = (query: string) => {
 
 const Upcoming: React.FC = () => {
   const isMobile = useMediaQuery('(max-width: 1024px)');
+  const navigate = useNavigate();
+  const dragStartTime = React.useRef<number>(0);
+
+  const handleClick = () => {
+    const dragDuration = Date.now() - dragStartTime.current;
+    if (dragDuration < 200) { // If the interaction was less than 200ms, treat it as a click
+      navigate('/on-view');
+    }
+  };
+
+  const handleDragStart = () => {
+    dragStartTime.current = Date.now();
+  };
+
+  const handleDragStop = () => {
+    // No need for additional logic here
+  };
 
   return (
     <Container>
       <Column>
         {isMobile ? (
-          <ShowPreview>
+          <ShowPreview onClick={handleClick}>
             <ShowImage>
               <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
             </ShowImage>
             <ArtistBox>
               <h1>Kate Burke & Daniela Rodriguez</h1>
             </ArtistBox>
-            <DateText>December 2024</DateText>
+            <DateText>One lifetime is enough to learn life&apos;s preciousness, December 2024</DateText>
           </ShowPreview>
         ) : (
-          <Draggable bounds="parent">
-            <ShowPreview>
+          <Draggable 
+            bounds="parent"
+            onStart={handleDragStart}
+            onStop={handleDragStop}
+          >
+            <ShowPreview onClick={handleClick}>
               <ShowImage>
                 <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" draggable={false} />
               </ShowImage>
               <ArtistBox>
                 <h1>Kate Burke & Daniela Rodriguez</h1>
               </ArtistBox>
-              <DateText>December 2024</DateText>
+              <DateText>One lifetime is enough to learn life&apos;s preciousness, December 2024</DateText>
             </ShowPreview>
           </Draggable>
         )}
       </Column>
       <Column>
-        {isMobile ? (
+        {/* {isMobile ? (
           <ShowPreview>
             <ShowImage>
               <img src="/experimental/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" />
@@ -168,10 +197,33 @@ const Upcoming: React.FC = () => {
               <DateText>January 2025</DateText>
             </ShowPreview>
           </Draggable>
+        )} */}
+        {isMobile ? (
+          <ShowPreview>
+            <ShowImage>
+              <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" />
+            </ShowImage>
+            <ArtistBox>
+              <h1>Sara Malpass & Sara Hess</h1>
+            </ArtistBox>
+            <DateText>Poems, September 2024</DateText>
+          </ShowPreview>
+        ) : (
+          <Draggable bounds="parent" defaultPosition={{ x: 0, y: window.innerHeight / 3 }}>
+            <ShowPreview>
+              <ShowImage>
+                <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
+              </ShowImage>
+              <ArtistBox>
+                <h1>Sara Malpass & Sara Hess</h1>
+              </ArtistBox>
+              <DateText>Poems, September 2024</DateText>
+            </ShowPreview>
+          </Draggable>
         )}
       </Column>
       <Column>
-        {isMobile ? (
+        {/* {isMobile ? (
           <ShowPreview>
             <ShowImage>
               <img src="/experimental/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" />
@@ -193,7 +245,7 @@ const Upcoming: React.FC = () => {
               <DateText>March 2025</DateText>
             </ShowPreview>
           </Draggable>
-        )}
+        )} */}
       </Column>
       <Column />
     </Container>

@@ -74,9 +74,10 @@ const ShowPreview = styled(Link)`
 const ArtistBox = styled.div`
   border: 1px solid black;
   padding: 0.5rem 1rem;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   display: inline-block;
   max-width: 200px;
+  text-align: left;
   h1 {
     font-size: 16px;
   }
@@ -181,7 +182,7 @@ const Home: React.FC = () => {
       <Column>
         <ShowPreview to="/on-view">
           <ShowPicture>
-            <img src="/experimental/images/exhibitions-pictures/Lifes/Lifes-1.jpg" alt="Lifes" />
+            <img src="/experimental/images/life-cover.jpeg" alt="Lifes" />
           </ShowPicture>
           <ArtistBox>
             <h1>Kate Burke & Dani Rodriguez</h1>
@@ -196,7 +197,7 @@ const Home: React.FC = () => {
       <Column>
         <ShopPreview href="https://blueboy.bigcartel.com/">
           <ShopImage>
-            <img src="/experimental/images/Tshirt-shop.png" alt="Shop Preview" />
+            <img src="/experimental/images/image93.png" alt="Shop Preview" />
           </ShopImage>
           <ShopInfo>
             <ShopLabel>

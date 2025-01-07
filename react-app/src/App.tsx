@@ -9,6 +9,7 @@ import Upcoming from './pages/Upcoming'
 import Archive from './pages/Archive'
 import Info from './pages/Info'
 import Poems from './pages/Poems'
+import ReadingRoom from './pages/ReadingRoom'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -112,6 +113,7 @@ const App: React.FC = () => {
             <Route path="/on-view" element={<OnView />} />
             <Route path="/upcoming" element={<Upcoming />} />
             <Route path="/archive" element={<Archive />} />
+            <Route path="/reading-room" element={<ReadingRoom />} />
             <Route path="/info" element={<Info />} />
             <Route path="/poems" element={<Poems />} />
           </Routes>

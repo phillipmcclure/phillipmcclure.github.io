@@ -77,6 +77,13 @@ const ArtistInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  
+  h1 {
+    font-size: 1rem;
+  }
 `
 
 const ExhibitionText = styled.div`
@@ -131,11 +138,10 @@ const OnView: React.FC = () => {
     <Container>
       <TextColumn>
         <ArtistInfo>
-          <h1>Kate Burke & Daniela Rodriguez: <i>One lifetime is enough to learn life&apos;s preciousness</i></h1>
-          <br />
-          <h1>December 15 through January 11.</h1>
+          <h1>Kate Burke & Dani Rodriguez</h1>
         </ArtistInfo>
         <br />
+        <p>One lifetime is enough to learn life&apos;s preciousness</p>
         <br />
         <ExhibitionText>
           <p>

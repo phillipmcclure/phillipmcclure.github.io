@@ -33,6 +33,8 @@ const Column = styled.div`
     margin: 0;
     padding: 1rem;
     min-height: auto;
+    width: 100%;
+    box-sizing: border-box;
 
     &:last-child {
       border-bottom: none;
@@ -123,8 +125,9 @@ const ShopPreview = styled.a`
 
   @media (max-width: 1024px) {
     position: static;
-    width: 100%;
+    width: calc(100% - 2rem);
     margin: 0;
+    box-sizing: border-box;
   }
 `
 

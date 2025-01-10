@@ -94,7 +94,8 @@ const ArtistBox = styled.div`
   h1 {
     font-size: 14px;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   @media (max-width: 1024px) {
@@ -152,7 +153,7 @@ const Upcoming: React.FC = () => {
               <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
             </ShowImage>
             <ArtistBox>
-              <h1>Kate Burke & Daniela Rodriguez</h1>
+              <h1>Kate Burke & Dani Rodriguez</h1>
             </ArtistBox>
             <DateText>One lifetime is enough to learn life&apos;s preciousness, December 2024</DateText>
           </ShowPreview>

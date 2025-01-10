@@ -48,8 +48,9 @@ const CarouselImage = styled.img`
   @media (max-width: 1024px) {
     width: calc(100vw - 1rem);
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 1rem;
+    background: #FFFFF3;
   }
 `
 
@@ -104,6 +105,7 @@ const ImageGallery = styled.div`
     padding: 0 1rem;
     gap: 1rem;
     width: 100%;
+    background: #FFFFF3;
     
     &::-webkit-scrollbar {
       display: none;
@@ -115,7 +117,7 @@ const ImageGallery = styled.div`
       scroll-snap-stop: always;
       width: calc(100vw - 2rem);
       height: 400px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 `

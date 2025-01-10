@@ -195,7 +195,7 @@ const Poems: React.FC = () => {
           {[...Array(17)].map((_, i) => (
             <CarouselImage 
               key={i + 1}
-              src={`/experimental/images/exhibitions-pictures/Poems/Poems-${i + 1}.jpg`}
+              src={`/images/exhibitions-pictures/Poems/Poems-${i + 1}.jpg`}
               alt={`Exhibition image ${i + 1}`}
             />
           ))}

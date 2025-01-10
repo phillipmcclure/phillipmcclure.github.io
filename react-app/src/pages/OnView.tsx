@@ -182,7 +182,7 @@ const OnView: React.FC = () => {
           {[...Array(20)].map((_, i) => (
             <CarouselImage 
               key={i + 1}
-              src={`/experimental/images/exhibitions-pictures/Lifes/Lifes-${i + 1}${getImageExtension(i + 1)}`}
+              src={`/images/exhibitions-pictures/Lifes/Lifes-${i + 1}${getImageExtension(i + 1)}`}
               alt={`Exhibition image ${i + 1}`}
             />
           ))}

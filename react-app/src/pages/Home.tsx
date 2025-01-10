@@ -185,7 +185,7 @@ const Home: React.FC = () => {
       <Column>
         <ShowPreview to="/on-view">
           <ShowPicture>
-            <img src="/experimental/images/life-cover.jpeg" alt="Lifes" />
+            <img src="/images/life-cover.jpeg" alt="Lifes" />
           </ShowPicture>
           <ArtistBox>
             <h1>Kate Burke & Dani Rodriguez</h1>
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
       <Column>
         <ShopPreview href="https://blueboy.bigcartel.com/">
           <ShopImage>
-            <img src="/experimental/images/image93.png" alt="Shop Preview" />
+            <img src="/images/image93.png" alt="Shop Preview" />
           </ShopImage>
           <ShopInfo>
             <ShopLabel>

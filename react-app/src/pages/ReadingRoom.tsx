@@ -157,7 +157,7 @@ const ReadingRoom: React.FC = () => {
         {isMobile ? (
           <ShowPreview onClick={() => window.open('https://blueboyspace.substack.com/p/in-conversation-with-sara-hess', '_blank')}>
             <ShowImage>
-              <img src="/experimental/images/Sarah_hess_interview.png" alt="Sara Hess in coversation with Emily Llamazalles" />
+              <img src="/images/Sarah_hess_interview.png" alt="Sara Hess in coversation with Emily Llamazalles" />
             </ShowImage>
             <TitleBox>
               <h1>Interview</h1>
@@ -173,7 +173,7 @@ const ReadingRoom: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('https://blueboyspace.substack.com/p/in-conversation-with-sara-hess')}>
               <ShowImage>
-                <img src="/experimental/images/Sarah_hess_interview.png" alt="Sara Hess in coversation with Emily Llamazalles" draggable={false} />
+                <img src="/images/Sarah_hess_interview.png" alt="Sara Hess in coversation with Emily Llamazalles" draggable={false} />
               </ShowImage>
               <TitleBox>
                 <h1>Interview</h1>
@@ -185,7 +185,7 @@ const ReadingRoom: React.FC = () => {
          {isMobile ? (
           <ShowPreview onClick={() => window.open('https://www.youtube.com/watch?v=g8bIJPLFljQ&t=175s', '_blank')}>
             <ShowImage>
-              <img src="/experimental/images/watch.png" alt="My Own Personal Samsara, Dani Rodriguez" />
+              <img src="/images/watch.png" alt="My Own Personal Samsara, Dani Rodriguez" />
             </ShowImage>
             <TitleBox>
               <h1>Watch</h1>
@@ -201,7 +201,7 @@ const ReadingRoom: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('https://www.youtube.com/watch?v=g8bIJPLFljQ&t=175s')}>
               <ShowImage>
-                <img src="/experimental/images/watch.png" alt="My Own Personal Samsara, Dani Rodriguez" draggable={false} />
+                <img src="/images/watch.png" alt="My Own Personal Samsara, Dani Rodriguez" draggable={false} />
               </ShowImage>
               <TitleBox>
                 <h1>Watch</h1>
@@ -215,7 +215,7 @@ const ReadingRoom: React.FC = () => {
       {isMobile ? (
           <ShowPreview onClick={() => window.open('https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:0c023b29-1008-4188-96e9-5cdf5ec0bd12', '_blank')}>
             <ShowImage>
-              <img src="/experimental/images/maggie_poetry.png" alt="maggie_poetry.png" />
+              <img src="/images/maggie_poetry.png" alt="maggie_poetry.png" />
             </ShowImage>
             <TitleBox>
               <h1>Essay</h1>
@@ -231,7 +231,7 @@ const ReadingRoom: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:0c023b29-1008-4188-96e9-5cdf5ec0bd12')}>
               <ShowImage>
-                <img src="/experimental/images/maggie_poetry.png" alt="maggie_poetry.png" draggable={false} />
+                <img src="/images/maggie_poetry.png" alt="maggie_poetry.png" draggable={false} />
               </ShowImage>
               <TitleBox>
                 <h1>Essay</h1>
@@ -245,7 +245,7 @@ const ReadingRoom: React.FC = () => {
       {isMobile ? (
           <ShowPreview onClick={() => window.open('https://blueboyspace.substack.com/p/a-trip-to-marsh-ruins', '_blank')}>
             <ShowImage>
-              <img src="/experimental/images/beverlybuchanan.png" alt="Visiting Marsh Ruins" />
+              <img src="/images/beverlybuchanan.png" alt="Visiting Marsh Ruins" />
             </ShowImage>
             <TitleBox>
               <h1>Essay</h1>
@@ -261,7 +261,7 @@ const ReadingRoom: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('https://blueboyspace.substack.com/p/a-trip-to-marsh-ruins')}>
               <ShowImage>
-                <img src="/experimental/images/beverlybuchanan.png" alt="Visiting Marsh Ruins" draggable={false} />
+                <img src="/images/beverlybuchanan.png" alt="Visiting Marsh Ruins" draggable={false} />
               </ShowImage>
               <TitleBox>
                 <h1>Essay</h1>

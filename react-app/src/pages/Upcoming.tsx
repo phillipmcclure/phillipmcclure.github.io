@@ -150,7 +150,7 @@ const Upcoming: React.FC = () => {
         {isMobile ? (
           <ShowPreview onClick={() => navigate('/on-view')}>
             <ShowImage>
-              <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
+              <img src="/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
             </ShowImage>
             <ArtistBox>
               <h1>Kate Burke & Dani Rodriguez</h1>
@@ -165,7 +165,7 @@ const Upcoming: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('/on-view')}>
               <ShowImage>
-                <img src="/experimental/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" draggable={false} />
+                <img src="/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" draggable={false} />
               </ShowImage>
               <ArtistBox>
                 <h1>Kate Burke & Daniela Rodriguez</h1>
@@ -190,7 +190,7 @@ const Upcoming: React.FC = () => {
           <Draggable bounds="parent" defaultPosition={{ x: 0, y: 200 }}>
             <ShowPreview>
               <ShowImage>
-                <img src="/experimental/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
+                <img src="/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
               </ShowImage>
               <ArtistBox>
                 <h1>Emily Llamazales & Daniel Jorgenson</h1>
@@ -202,7 +202,7 @@ const Upcoming: React.FC = () => {
         {isMobile ? (
           <ShowPreview onClick={() => navigate('/poems')}>
             <ShowImage>
-              <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" />
+              <img src="/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" />
             </ShowImage>
             <ArtistBox>
               <h1>Sara Malpass & Sara Hess</h1>
@@ -218,7 +218,7 @@ const Upcoming: React.FC = () => {
           >
             <ShowPreview onClick={handleClick('/poems')}>
               <ShowImage>
-                <img src="/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
+                <img src="/images/exhibitions-pictures/Poems/Poems-13.jpg" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
               </ShowImage>
               <ArtistBox>
                 <h1>Sara Malpass & Sara Hess</h1>
@@ -243,7 +243,7 @@ const Upcoming: React.FC = () => {
           <Draggable bounds="parent">
             <ShowPreview>
               <ShowImage>
-                <img src="/experimental/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" draggable={false} />
+                <img src="/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" draggable={false} />
               </ShowImage>
               <ArtistBox>
                 <h1>Devin Balara & David Onri Anderson</h1>

@@ -82,11 +82,11 @@ const ExhibitionText = styled.div`
 `
 
 const ImageGallery = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: block;
+  width: 100%;
 
   @media (max-width: 1024px) {
+    display: flex;
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -95,18 +95,10 @@ const ImageGallery = styled.div`
     padding: 0 1rem;
     gap: 1rem;
     width: 100%;
+    height: 400px;
     
     &::-webkit-scrollbar {
       display: none;
-    }
-
-    img {
-      flex: 0 0 calc(100vw - 2rem);
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
-      width: calc(100vw - 2rem);
-      height: 400px;
-      object-fit: cover;
     }
   }
 `
@@ -116,11 +108,18 @@ const ArtistBio = styled.span`
 `
 
 const CarouselImage = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+
   @media (max-width: 1024px) {
-    width: calc(100vw - 1rem);
+    width: calc(100vw - 2rem);
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 1rem;
+    background: #FFFFF3;
   }
 `
 

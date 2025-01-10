@@ -65,7 +65,7 @@ const ImageColumn = styled.div`
   padding: 1rem;
   padding-top: 2rem;
   overflow-y: auto;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 2rem);
   box-sizing: border-box;
   max-width: 100%;
 

@@ -179,7 +179,7 @@ const Upcoming: React.FC = () => {
         {/* {isMobile ? (
           <ShowPreview>
             <ShowImage>
-              <img src="/experimental/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" />
+              <img src="/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" />
             </ShowImage>
             <ArtistBox>
               <h1>Emily Llamazales & Daniel Jorgenson</h1>
@@ -232,7 +232,7 @@ const Upcoming: React.FC = () => {
         {/* {isMobile ? (
           <ShowPreview>
             <ShowImage>
-              <img src="/experimental/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" />
+              <img src="/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" />
             </ShowImage>
             <ArtistBox>
               <h1>Devin Balara & David Onri Anderson</h1>

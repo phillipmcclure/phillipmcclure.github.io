@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import Navigation from './components/Navigation'
@@ -101,7 +101,7 @@ const MainContent = styled.div`
 
 const App: React.FC = () => {
   return (
-    <Router basename="/experimental">
+    <BrowserRouter>
       <GlobalStyle />
       <Layout>
         <Column>
@@ -109,18 +109,29 @@ const App: React.FC = () => {
         </Column>
         <MainContent>
           <Routes>
+            <Route path="*" element={<RedirectWithTrailingSlash />} />
             <Route path="/" element={<Home />} />
-            <Route path="/on-view" element={<OnView />} />
-            <Route path="/upcoming" element={<Upcoming />} />
-            <Route path="/archive" element={<Archive />} />
-            <Route path="/reading-room" element={<ReadingRoom />} />
-            <Route path="/info" element={<Info />} />
-            <Route path="/poems" element={<Poems />} />
+            <Route path="/on-view/" element={<OnView />} />
+            <Route path="/upcoming/" element={<Upcoming />} />
+            <Route path="/reading-room/" element={<ReadingRoom />} />
+            <Route path="/info/" element={<Info />} />
+            <Route path="/poems/" element={<Poems />} />
+            <Route path="/archive/" element={<Archive />} />
           </Routes>
         </MainContent>
       </Layout>
-    </Router>
+    </BrowserRouter>
   )
 }
+
+const RedirectWithTrailingSlash = () => {
+  const location = window.location;
+  
+  if (!location.pathname.endsWith('/') && location.pathname.length > 1) {
+    return <Navigate to={`${location.pathname}/`} replace />;
+  }
+  
+  return <Navigate to="/" replace />;
+};
 
 export default App 

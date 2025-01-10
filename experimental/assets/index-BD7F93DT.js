@@ -140,6 +140,8 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
     margin: 0;
     padding: 1rem;
     min-height: auto;
+    width: 100%;
+    box-sizing: border-box;
 
     &:last-child {
       border-bottom: none;
@@ -220,8 +222,9 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
 
   @media (max-width: 1024px) {
     position: static;
-    width: 100%;
+    width: calc(100% - 2rem);
     margin: 0;
+    box-sizing: border-box;
   }
 `,cv=te.div`
   border: 1px solid black;
@@ -300,18 +303,27 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
     box-sizing: border-box;
   }
 `,vv=te.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+
   @media (max-width: 1024px) {
-    width: calc(100vw - 1rem);
+    width: calc(100vw - 2rem);
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 1rem;
+    background: #FFFFF3;
   }
 `,yv=te.div`
   grid-column: 3 / 5;
-  position: relative;
-  overflow-y: auto;
   padding: 1rem;
   padding-top: 2rem;
+  overflow-y: auto;
+  height: calc(100vh - 4rem);
+  box-sizing: border-box;
+  max-width: 100%;
 
   @media (max-width: 1024px) {
     grid-column: 1;
@@ -323,6 +335,7 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
     width: 100vw;
     margin-left: -1rem;
     margin-right: -1rem;
+    background: #FFFFF3;
   }
 `,wv=te.div`
   display: flex;
@@ -338,11 +351,11 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
 `,xv=te.div`
   margin-top: 1rem;
 `,Sv=te.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: block;
+  width: 100%;
 
   @media (max-width: 1024px) {
+    display: flex;
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -351,18 +364,10 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
     padding: 0 1rem;
     gap: 1rem;
     width: 100%;
+    height: 400px;
     
     &::-webkit-scrollbar {
       display: none;
-    }
-
-    img {
-      flex: 0 0 calc(100vw - 2rem);
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
-      width: calc(100vw - 2rem);
-      height: 400px;
-      object-fit: cover;
     }
   }
 `,kv=te.span`
@@ -452,7 +457,8 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
   h1 {
     font-size: 14px;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   @media (max-width: 1024px) {
@@ -461,7 +467,7 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
 `,Vo=te.h1`
   font-size: 14px;
   margin: 0;
-`,Iv=i=>{const[l,a]=He.useState(!1);return He.useEffect(()=>{const u=window.matchMedia(i);u.matches!==l&&a(u.matches);const c=()=>a(u.matches);return u.addListener(c),()=>u.removeListener(c)},[l,i]),l},Mv=()=>{const i=Iv("(max-width: 1024px)"),l=Uf(),a=He.useRef(0),u=m=>()=>{Date.now()-a.current<200&&l(m)},c=()=>{a.current=Date.now()},f=()=>{};return p.jsxs(Ov,{children:[p.jsx(Uo,{children:i?p.jsxs(Bo,{onClick:()=>l("/on-view"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/life-cover.jpeg",alt:"Kate Burke & Daniela Rodriguez"})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Kate Burke & Daniela Rodriguez"})}),p.jsx(Vo,{children:"One lifetime is enough to learn life's preciousness, December 2024"})]}):p.jsx(Un,{bounds:"parent",onStart:c,onStop:f,children:p.jsxs(Bo,{onClick:u("/on-view"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/life-cover.jpeg",alt:"Kate Burke & Daniela Rodriguez",draggable:!1})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Kate Burke & Daniela Rodriguez"})}),p.jsx(Vo,{children:"One lifetime is enough to learn life's preciousness, December 2024"})]})})}),p.jsx(Uo,{children:i?p.jsxs(Bo,{onClick:()=>l("/poems"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg",alt:"Emily Llamazales & Daniel Jorgenson"})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Sara Malpass & Sara Hess"})}),p.jsx(Vo,{children:"Poems, September 2024"})]}):p.jsx(Un,{bounds:"parent",defaultPosition:{x:0,y:window.innerHeight/3},onStart:c,onStop:f,children:p.jsxs(Bo,{onClick:u("/poems"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg",alt:"Emily Llamazales & Daniel Jorgenson",draggable:!1})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Sara Malpass & Sara Hess"})}),p.jsx(Vo,{children:"Poems, September 2024"})]})})}),p.jsx(Uo,{}),p.jsx(Uo,{})]})},Fv=te.div`
+`,Iv=i=>{const[l,a]=He.useState(!1);return He.useEffect(()=>{const u=window.matchMedia(i);u.matches!==l&&a(u.matches);const c=()=>a(u.matches);return u.addListener(c),()=>u.removeListener(c)},[l,i]),l},Mv=()=>{const i=Iv("(max-width: 1024px)"),l=Uf(),a=He.useRef(0),u=m=>()=>{Date.now()-a.current<200&&l(m)},c=()=>{a.current=Date.now()},f=()=>{};return p.jsxs(Ov,{children:[p.jsx(Uo,{children:i?p.jsxs(Bo,{onClick:()=>l("/on-view"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/life-cover.jpeg",alt:"Kate Burke & Daniela Rodriguez"})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Kate Burke & Dani Rodriguez"})}),p.jsx(Vo,{children:"One lifetime is enough to learn life's preciousness, December 2024"})]}):p.jsx(Un,{bounds:"parent",onStart:c,onStop:f,children:p.jsxs(Bo,{onClick:u("/on-view"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/life-cover.jpeg",alt:"Kate Burke & Daniela Rodriguez",draggable:!1})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Kate Burke & Daniela Rodriguez"})}),p.jsx(Vo,{children:"One lifetime is enough to learn life's preciousness, December 2024"})]})})}),p.jsx(Uo,{children:i?p.jsxs(Bo,{onClick:()=>l("/poems"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg",alt:"Emily Llamazales & Daniel Jorgenson"})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Sara Malpass & Sara Hess"})}),p.jsx(Vo,{children:"Poems, September 2024"})]}):p.jsx(Un,{bounds:"parent",defaultPosition:{x:0,y:window.innerHeight/3},onStart:c,onStop:f,children:p.jsxs(Bo,{onClick:u("/poems"),children:[p.jsx(Wo,{children:p.jsx("img",{src:"/experimental/images/exhibitions-pictures/Poems/Poems-13.jpg",alt:"Emily Llamazales & Daniel Jorgenson",draggable:!1})}),p.jsx(Ho,{children:p.jsx("h1",{children:"Sara Malpass & Sara Hess"})}),p.jsx(Vo,{children:"Poems, September 2024"})]})})}),p.jsx(Uo,{}),p.jsx(Uo,{})]})},Fv=te.div`
   display: flex;
   flex-direction: column;
   max-width: 45%;

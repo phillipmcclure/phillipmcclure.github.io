@@ -163,8 +163,10 @@ const OnView: React.FC = () => {
             <br /><br />
             This monotony is reflected in the physical labor of Kate Burke&apos;s practice. In her studio, piles of small ceramic tiles and Perler beads fill the floor. As we talk, she crafts small mosaics on the ground, rehearsing the method she will later employ to cover the desk she&apos;s found on Facebook Marketplace or a small shelf with a heart-shaped window. Burke&apos;s images reveal slowly, over time, one physical pixel following the last. On the ends of the desk, small flowers take root, bud, blossom, and wilt—the cycle continues.
             <br /><br />
+            <br/>
             And I&apos;ll have to scrub again on Monday and Tuesday, and well, maybe not Wednesday because Wednesday is Laundry Day, but I&apos;ll be sure to scrub again on Thursday.
             And even if I scrub with a heavenly force, with an earnest commitment to the shine, life comes down and messes it all up.
+            <br/>
             <br /><br />
             Through their respective practices, Burke and Rodriguez inhabit these circling loops with dedication and attention, animating what could be monotony with spiritual rigor, marking where mundanity collides with something mythic.
             <br /><br /><br /><br />

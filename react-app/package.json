@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp -r dist/* ../",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist && mkdir -p ../experimental && cp -r dist/* ../experimental/"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -45,8 +45,14 @@ const TextColumn = styled.div`
 `
 
 const CarouselImage = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+
   @media (max-width: 1024px) {
-    width: calc(100vw - 1rem);
+    width: calc(100vw - 2rem);
     height: 400px;
     object-fit: contain;
     margin: 0 1rem;
@@ -56,10 +62,12 @@ const CarouselImage = styled.img`
 
 const ImageColumn = styled.div`
   grid-column: 3 / 5;
-  position: relative;
-  overflow-y: auto;
   padding: 1rem;
   padding-top: 2rem;
+  overflow-y: auto;
+  height: calc(100vh - 4rem);
+  box-sizing: border-box;
+  max-width: 100%;
 
   @media (max-width: 1024px) {
     grid-column: 1;
@@ -71,6 +79,7 @@ const ImageColumn = styled.div`
     width: 100vw;
     margin-left: -1rem;
     margin-right: -1rem;
+    background: #FFFFF3;
   }
 `
 
@@ -92,11 +101,11 @@ const ExhibitionText = styled.div`
 `
 
 const ImageGallery = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: block;
+  width: 100%;
 
   @media (max-width: 1024px) {
+    display: flex;
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -105,19 +114,10 @@ const ImageGallery = styled.div`
     padding: 0 1rem;
     gap: 1rem;
     width: 100%;
-    background: #FFFFF3;
+    height: 400px;
     
     &::-webkit-scrollbar {
       display: none;
-    }
-
-    img {
-      flex: 0 0 calc(100vw - 2rem);
-      scroll-snap-align: center;
-      scroll-snap-stop: always;
-      width: calc(100vw - 2rem);
-      height: 400px;
-      object-fit: contain;
     }
   }
 `

@@ -182,7 +182,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <EmptyColumn />
-      <Column>
+      {/* <Column>
         <ShowPreview to="/on-view">
           <ShowPicture>
             <img src="/images/life-cover.jpeg" alt="Lifes" />
@@ -196,7 +196,8 @@ const Home: React.FC = () => {
             </h1>
           </ShowTagline>
         </ShowPreview>
-      </Column>
+      </Column> */}
+      <EmptyColumn />
       <Column>
         <ShopPreview href="https://blueboy.bigcartel.com/">
           <ShopImage>

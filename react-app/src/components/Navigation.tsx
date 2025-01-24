@@ -80,7 +80,7 @@ const Navigation: React.FC = () => {
       <Nav>
         <NavContainer>
           <NavLink to="/"><h1>home,</h1></NavLink>
-          <NavLink to="/on-view"><h1>on view,</h1></NavLink>
+          {/* <NavLink to="/on-view"><h1>on view,</h1></NavLink> */}
           <NavLink to="/upcoming"><h1>exhibitions,</h1></NavLink>
           <NavLink to="/reading-room"><h1>reading room,</h1></NavLink>
           <NavLink to="/info"><h1>info,</h1></NavLink>

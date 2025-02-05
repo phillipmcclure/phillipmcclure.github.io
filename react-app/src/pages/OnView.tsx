@@ -140,40 +140,31 @@ const OnView: React.FC = () => {
     <Container>
       <TextColumn>
         <ArtistInfo>
-          <h1>Kate Burke & Dani Rodriguez</h1>
+          <h1>Emily Llamazalles & Daniel Jorgenson</h1>
         </ArtistInfo>
         <br />
-        <p>One lifetime is enough to learn life&apos;s preciousness</p>
+        <p>Tracing a spiral</p>
         <br />
         <ExhibitionText>
           <p>
-            A large circling loop wheels its way through the work in One lifetime is enough to learn life&apos;s preciousness. The loop rises and falls, twists, turns, and returns as both artists note the circular patterns at play in their own lives.
+          We tend to think of time in two different ways. We view time stretching out like a long, straight line—points plotted chronologically until the line moves out of view, enveloped in infinity. We move forward; we look backward. We begin and end. Alternatively, some speak of time as stacking circles. Instead of progressing linearly, time moves in a loop shaped by cycles that repeat endlessly. 
+          <br /><br />
+          When we combine these two views of time, we get a spiraling line. Like a path winding up an unending mountain, we progress forward but circle the same form, a little higher with each pass. Llamazalles and Jorgenson attempt to traverse this spiraling line with their work, walking ahead on the path and calling back to report on an uncertain future.
             <br /><br />
-            In their single-channel video, Dani Rodriguez scrubs away the grime to reveal a mythologized self, wiped of features sans two large, winking eyes.
-            <br /><br /><br />
-            Everyday I have to: scrub, wash, sweep, rinse, mop, cleanse, wipe, and scrub again.
+            In recent years, Emily Llamazalles has centered her art practice in response to the sci-fi epic poem, Mörk Materia, by Swedish writer and critic Aase Berg. Unfolding as a post-cataclysmic parable, Mörk Materia's narrator witnesses the slow lurch of mutation and evolution towards a new order of biology. Alongside the narrator, Llamazelles sculpts her climate anxiety into alien-like organisms—creatures that amalgamate future ecology and post-human relics: fishing lures and shells adorn and pierce their skin. These beings exist after us and are of us. They live further up/down the line. On the back wall of the gallery, the artist maps a constellation of spinning, tentacular stars: a place for looking ahead. 
             <br /><br />
-            All over again.
+            Daniel Jorgenson's digital collages open like portals along the twisting line, pulling the viewer into alternate dimensions composed of pure energy. His veils hang like windows or doors, tracing a thin line between this world and one just outside of it. Within their frames, it's difficult to say whether his images are forming or falling apart. Like Llamazalles's ceramic organisms, Jorgenson's work is frozen mid-evolution.      
             <br /><br />
-            I scrub those floors squeaky clean, exhaustion down my back. So I fall asleep.
             <br /><br />
-            And I wake up, and I keep on scrubbing.
-            <br /><br /><br />
-            Chants Rodriguez in My Own Personal Saṃsāra, wherein Rodriguez likens cleaning their home to the karmic cycle. The term Saṃsāra connotes &quot;cyclic change&quot; or, more colloquially, &quot;running in circles.&quot; They scrub the glass, grow tired, sleep, and wake to begin again.
-            <br /><br />
-            This monotony is reflected in the physical labor of Kate Burke&apos;s practice. In her studio, piles of small ceramic tiles and Perler beads fill the floor. As we talk, she crafts small mosaics on the ground, rehearsing the method she will later employ to cover the desk she&apos;s found on Facebook Marketplace or a small shelf with a heart-shaped window. Burke&apos;s images reveal slowly, over time, one physical pixel following the last. On the ends of the desk, small flowers take root, bud, blossom, and wilt—the cycle continues.
-            <br /><br />
-            <br/>
-            And I&apos;ll have to scrub again on Monday and Tuesday, and well, maybe not Wednesday because Wednesday is Laundry Day, but I&apos;ll be sure to scrub again on Thursday.
-            And even if I scrub with a heavenly force, with an earnest commitment to the shine, life comes down and messes it all up.
-            <br/>
-            <br /><br />
-            Through their respective practices, Burke and Rodriguez inhabit these circling loops with dedication and attention, animating what could be monotony with spiritual rigor, marking where mundanity collides with something mythic.
-            <br /><br /><br /><br />
             <ArtistBio>
-              <b>Kate Burke</b> is an Atlanta-based musician, artist, and performer. After receiving her BFA in Fabric Design in 2016 with honors from the University of Georgia. She has shown throughout the United States with solo and group presentations in spaces such as the Museum of Contemporary Art of Georgia, the Atlanta Contemporary, Hartsfield Jackson International Airport, Lyndon House Art Center, the Dalton Gallery at Agnes Scott, Tiger Strikes Asteroid Greenville, Free Market Gallery, ATHICA, whitespec, Art Fields, Waiting Room Art, and Mint Atlanta. Kate has received distinguished awards such as the ArtFields Category Award for textiles in 2019 and has a growing list of fellowships, including being a two-time Hambidge Center fellow, a former member of the Atlanta Contemporary Studio Artists, a resident at Long Meadow Artist Residency, and a Leap Year Artist with MINT in Atlanta, GA. Kate is currently a part of the Creatives Project Residency in Atlanta, GA, through 2025.
+                <b>Emily Llamazales</b> (b. 1997) is an interdisciplinary artist whose work draws from science-fiction and reimagined biology in order to address concerns about our ecological future. She holds a BA in Interdisciplinary Studio Art and Design from the University of Georgia's Lamar Dodd School of Art (2019), was selected as a finalist for the 2023 Emerging Artist Fellowship by Atlanta Celebrates Photography, awarded a 2022/2023 Emerging Artist Award from the Atlanta Mayor's Office of Cultural Affairs and is a recipient of a 2022 Idea Capital Grant (Atlanta).
+                <br /><br />
+                Recent exhibitions include Mörk Materia at MINT (2024), a two person presentation at NADA Miami alongside Sam Newton with Cleo the Gallery (2023), and Gloom-Bloom, a duo show with Sydney Ewerth at Day & Night Projects (2023).
+                <br /><br />
+                <br/><br/>
+              <b>Daniel Jorgenson</b> (b. 1994) is an artist living and working in Savannah, GA. His background is in religion with no formal training in the arts, but he has worked with digital media for over a decade, and has been honing the current iteration of his work over the last several years.
               <br /><br />
-              <b>Dani Rodriguez</b> is a multidisciplinary artist living and working between Colombia and the United States. Dani makes drawings, textiles, and video art that synthesize the information learned from organizing life around friendship, walking through different ecosystems, and practicing the deep listening of body/mind. Through their work, Daniela wants to honor and adorn the liberating processes that have transformed them and share them in an effort to tighten the connection between all life.
+              Inspired by the beauty of life lived through the Eastern Orthodox ecclesiastical calendar, his art is an exploration of the digital frontier as a means of expressing modern spiritual reality both in difficulty and sublimity. Through the layering and manipulation of digital images, he hopes to create unconventional iconic windows into a spiritually dense world.
             </ArtistBio>
           </p>
         </ExhibitionText>
@@ -184,7 +175,7 @@ const OnView: React.FC = () => {
           {[...Array(20)].map((_, i) => (
             <CarouselImage 
               key={i + 1}
-              src={`/images/exhibitions-pictures/Lifes/Lifes-${i + 1}${getImageExtension(i + 1)}`}
+              src={`/images/exhibitions-pictures/Spirals/Spiral-${i + 1}${getImageExtension(i + 1)}`}
               alt={`Exhibition image ${i + 1}`}
             />
           ))}

@@ -181,22 +181,21 @@ const EmptyColumn = styled(Column)`
 const Home: React.FC = () => {
   return (
     <Container>
-      <EmptyColumn />
-      {/* <Column>
+      <Column>
         <ShowPreview to="/on-view">
           <ShowPicture>
-            <img src="/images/life-cover.jpeg" alt="Lifes" />
+            <img src="/images/Spiral-11.jpg" alt="Spiral" />
           </ShowPicture>
           <ArtistBox>
-            <h1>Kate Burke & Dani Rodriguez</h1>
+            <h1>On View</h1>
           </ArtistBox>
           <ShowTagline>
             <h1>
-              One lifetime is enough to learn life&apos;s preciousness<br />
+            Tracing a Spiral: Emily Llamazales & Daniel Jorgenson<br />
             </h1>
           </ShowTagline>
         </ShowPreview>
-      </Column> */}
+      </Column>
       <EmptyColumn />
       <Column>
         <ShopPreview href="https://blueboy.bigcartel.com/">

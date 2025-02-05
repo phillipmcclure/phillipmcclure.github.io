@@ -144,8 +144,8 @@ interface ImageData {
 }
 
 const images: readonly ImageData[] = [
-  { size: 'large', src: '/images/blue-boy-concert.png', alt: 'Blue Boy Concert', pos: { x: 50, y: 50 } },
   { size: 'small', src: '/images/blue-boy-night-party.png', alt: 'Blue Boy Night Party', pos: { x: 200, y: 200 } },
+  { size: 'large', src: '/images/blue-boy-concert.png', alt: 'Blue Boy Concert', pos: { x: 50, y: 50 } },
   { size: 'large', src: '/images/blue-boy-night-projector.jpeg', alt: 'Blue Boy Gallery', pos: { x: 100, y: 350 } }
 ] as const;
 

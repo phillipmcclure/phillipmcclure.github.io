@@ -147,8 +147,33 @@ const Upcoming: React.FC = () => {
   return (
     <Container>
       <Column>
-        {isMobile ? (
+      {isMobile ? (
           <ShowPreview onClick={() => navigate('/on-view')}>
+            <ShowImage>
+              <img src="/images/Spiral-11.jpg" alt="Emily Llamazales & Daniel Jorgenson" />
+            </ShowImage>
+            <ArtistBox>
+              <h1>Emily Llamazales & Daniel Jorgenson</h1>
+            </ArtistBox>
+            <DateText>Tracing a spiral, January 2025</DateText>
+          </ShowPreview>
+        ) : (
+          <Draggable bounds="parent" defaultPosition={{ x: 0, y: 200 }}>
+            <ShowPreview onClick={handleClick('/on-view')}>
+              <ShowImage>
+                <img src="/images/Spiral-11.jpg" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
+              </ShowImage>
+              <ArtistBox>
+                <h1>Emily Llamazales & Daniel Jorgenson</h1>
+              </ArtistBox>
+              <DateText>Tracing a spiral, January 2025</DateText>
+            </ShowPreview>
+          </Draggable>
+        )}
+      </Column>
+      <Column>
+        {isMobile ? (
+          <ShowPreview >
             <ShowImage>
               <img src="/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" />
             </ShowImage>
@@ -163,7 +188,7 @@ const Upcoming: React.FC = () => {
             onStart={handleDragStart}
             onStop={handleDragStop}
           >
-            <ShowPreview onClick={handleClick('/on-view')}>
+            <ShowPreview>
               <ShowImage>
                 <img src="/images/life-cover.jpeg" alt="Kate Burke & Daniela Rodriguez" draggable={false} />
               </ShowImage>
@@ -176,29 +201,6 @@ const Upcoming: React.FC = () => {
         )}
       </Column>
       <Column>
-        {/* {isMobile ? (
-          <ShowPreview>
-            <ShowImage>
-              <img src="/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" />
-            </ShowImage>
-            <ArtistBox>
-              <h1>Emily Llamazales & Daniel Jorgenson</h1>
-            </ArtistBox>
-            <DateText>January 2025</DateText>
-          </ShowPreview>
-        ) : (
-          <Draggable bounds="parent" defaultPosition={{ x: 0, y: 200 }}>
-            <ShowPreview>
-              <ShowImage>
-                <img src="/images/Daniel-Emily.png" alt="Emily Llamazales & Daniel Jorgenson" draggable={false} />
-              </ShowImage>
-              <ArtistBox>
-                <h1>Emily Llamazales & Daniel Jorgenson</h1>
-              </ArtistBox>
-              <DateText>January 2025</DateText>
-            </ShowPreview>
-          </Draggable>
-        )} */}
         {isMobile ? (
           <ShowPreview onClick={() => navigate('/poems')}>
             <ShowImage>
@@ -228,31 +230,7 @@ const Upcoming: React.FC = () => {
           </Draggable>
         )}
       </Column>
-      <Column>
-        {/* {isMobile ? (
-          <ShowPreview>
-            <ShowImage>
-              <img src="/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" />
-            </ShowImage>
-            <ArtistBox>
-              <h1>Devin Balara & David Onri Anderson</h1>
-            </ArtistBox>
-            <DateText>March 2025</DateText>
-          </ShowPreview>
-        ) : (
-          <Draggable bounds="parent">
-            <ShowPreview>
-              <ShowImage>
-                <img src="/images/placeholder garden.jpg" alt="Devin Balara & David Onri Anderson" draggable={false} />
-              </ShowImage>
-              <ArtistBox>
-                <h1>Devin Balara & David Onri Anderson</h1>
-              </ArtistBox>
-              <DateText>March 2025</DateText>
-            </ShowPreview>
-          </Draggable>
-        )} */}
-      </Column>
+      
       <Column />
     </Container>
   )

@@ -127,11 +127,6 @@ const ArtistBio = styled.span`
 `
 
 const getImageExtension = (index: number): string => {
-  const jpegIndices = [4, 5, 6, 7, 11, 12, 13];
-  const pngIndices = [18, 19, 20];
-  
-  if (jpegIndices.includes(index)) return '.jpeg';
-  if (pngIndices.includes(index)) return '.png';
   return '.jpg';
 };
 
@@ -147,13 +142,13 @@ const OnView: React.FC = () => {
         <br />
         <ExhibitionText>
           <p>
-          We tend to think of time in two different ways. We view time stretching out like a long, straight line—points plotted chronologically until the line moves out of view, enveloped in infinity. We move forward; we look backward. We begin and end. Alternatively, some speak of time as stacking circles. Instead of progressing linearly, time moves in a loop shaped by cycles that repeat endlessly. 
+          We tend to think of time in two different ways. We view time stretching out like a long, straight line—points plotted chronologically until the line moves out of view, enveloped in infinity. We move forward; we look backward. We begin and end. Alternatively, some speak of time as stacking circles. Instead of progressing linearly, time moves in a loop of endlessly repeating cycles.
           <br /><br />
-          When we combine these two views of time, we get a spiraling line. Like a path winding up an unending mountain, we progress forward but circle the same form, a little higher with each pass. Llamazalles and Jorgenson attempt to traverse this spiraling line with their work, walking ahead on the path and calling back to report on an uncertain future.
+          When we combine these two views of time, we see a spiraling line. Like a path winding up an unending mountain, we progress forward but circle the same form, a little higher with each pass. Llamazales and Jorgenson attempt to traverse this spiraling line with their work, walking ahead on the path and calling back to report on an uncertain future.
             <br /><br />
-            In recent years, Emily Llamazalles has centered her art practice in response to the sci-fi epic poem, Mörk Materia, by Swedish writer and critic Aase Berg. Unfolding as a post-cataclysmic parable, Mörk Materia's narrator witnesses the slow lurch of mutation and evolution towards a new order of biology. Alongside the narrator, Llamazelles sculpts her climate anxiety into alien-like organisms—creatures that amalgamate future ecology and post-human relics: fishing lures and shells adorn and pierce their skin. These beings exist after us and are of us. They live further up/down the line. On the back wall of the gallery, the artist maps a constellation of spinning, tentacular stars: a place for looking ahead. 
+            In recent years, Emily Llamazales has centered her art practice in response to the sci-fi epic poem, <i>Mörk Materia</i>, by Swedish writer and critic Aase Berg. Unfolding as a post-cataclysmic parable, <i>Mörk Materia</i>'s narrator witnesses the slow lurch of mutation and evolution towards a new order of biology. Alongside the narrator, Llamazales sculpts her climate anxiety into alien-like organisms—creatures that amalgamate future ecology and post-human relics: fishing lures and shells adorn and pierce their skin. These beings exist after us and are of us. They live further up/down the line. On the back wall of the gallery, the artist maps a constellation of spinning, tentacular stars: a place for looking ahead.
             <br /><br />
-            Daniel Jorgenson's digital collages open like portals along the twisting line, pulling the viewer into alternate dimensions composed of pure energy. His veils hang like windows or doors, tracing a thin line between this world and one just outside of it. Within their frames, it's difficult to say whether his images are forming or falling apart. Like Llamazalles's ceramic organisms, Jorgenson's work is frozen mid-evolution.      
+            Daniel Jorgenson's digital collages open like portals along the twisting line, pulling the viewer into parallel dimensions of pure energy. His veils hang like windows or doors, tracing a thin line between this world and one just outside it. Composed entirely of stock nature photography, Jorgenson stretches his source material into something more spiritual than physical in substance. It's difficult to say whether these abstractions are forming or falling apart; a flower erupts into a storm. Like Llamazales's ceramic organisms, Jorgenson's work is frozen mid-evolution, both stopping time while we watch.
             <br /><br />
             <br /><br />
             <ArtistBio>

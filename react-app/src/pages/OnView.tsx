@@ -135,7 +135,7 @@ const OnView: React.FC = () => {
     <Container>
       <TextColumn>
         <ArtistInfo>
-          <h1>Emily Llamazalles & Daniel Jorgenson</h1>
+          <h1>Emily Llamazales & Daniel Jorgenson</h1>
         </ArtistInfo>
         <br />
         <p>Tracing a spiral</p>
